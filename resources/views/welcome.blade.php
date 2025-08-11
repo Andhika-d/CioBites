@@ -7,6 +7,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <title>Selamat Datang di CioBites</title>
     <style>
+        #promo, #kontak {
+            min-height: 100vh;
+        }
+
+        #kontak {
+            scroll-margin-top: 70px;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -87,7 +95,7 @@
                 </svg>
                 Produk
             </a>
-            <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-900">
+            <a href="#tentang-kami" class="flex items-center gap-2 text-sm font-semibold text-gray-900">
                 <!-- Ikon Info Circle -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <circle cx="12" cy="12" r="9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -95,14 +103,14 @@
                 </svg>
                 Tentang Kami
             </a>
-            <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-900">
+            <a href="#promo" class="flex items-center gap-2 text-sm font-semibold text-gray-900">
                 <!-- Ikon Star -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 17.75L6.16 21l1.12-6.52L2 9.75l6.58-.96L12 3l3.42 5.79L22 9.75l-5.28 4.73L17.84 21 12 17.75z" />
                 </svg>
                 Promo
             </a>
-            <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-900">
+            <a href="#kontak" class="flex items-center gap-2 text-sm font-semibold text-gray-900">
                 <!-- Ikon Mail -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.75 8.25v7.5a2.25 2.25 0 01-2.25 2.25h-15A2.25 2.25 0 012.25 15.75v-7.5A2.25 2.25 0 014.5 6h15a2.25 2.25 0 012.25 2.25zm-18 0l9 6 9-6" />
@@ -130,9 +138,9 @@
                     <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
                         <a href="#produk" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Produk</a>
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Tentang Kami</a>
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Promo</a>
-                        <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Kontak</a>
+                        <a href="#tentang-kami" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Tentang Kami</a>
+                        <a href="#promo" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Promo</a>
+                        <a href="#kontak" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">Kontak</a>
                     </div>
                     <div class="py-6">
                         <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50">Masuk</a>
@@ -142,7 +150,6 @@
                 </el-dialog-panel>
             </dialog>
             </el-dialog>
-
     </header>
     
     <!-- Menu Utama -->
@@ -219,7 +226,177 @@
         </div>
     </div>
     </section>
-    
+
+    <!-- Section Tentang Kami -->
+    <section id="tentang-kami" class="py-20 bg-white border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center border-b-4 border-emerald-400 inline-block pb-2">
+        Tentang Kami
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Kiri: Teks -->
+        <div class="space-y-6 text-gray-700 text-lg leading-relaxed">
+            <p>
+            <span class="font-semibold text-emerald-600">CioBites</span> hadir untuk memberikan makanan kucing premium yang tidak hanya lezat, tapi juga sehat dan bergizi. Kami percaya kucing kesayangan anda pantas mendapatkan yang terbaik.
+            </p>
+            <p>
+            Semua produk kami dibuat dari bahan alami pilihan, tanpa pengawet dan pewarna buatan, demi menjaga kesehatan jangka panjang si meong.
+            </p>
+            <p>
+            Bergabunglah dengan ribuan pecinta kucing yang sudah merasakan manfaat <span class="italic text-emerald-500">CioBites</span> dan buat hari-hari si meong lebih ceria dan sehat.
+            </p>
+        </div>
+
+        <!-- Kanan: Cards fitur -->
+        <div class="space-y-6">
+            <div class="flex items-center gap-4 bg-emerald-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow cursor-default">
+            <div class="flex-shrink-0 bg-emerald-400 text-white rounded-full p-3">
+                <!-- Icon Quality -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4 -4" />
+                <circle cx="12" cy="12" r="9" />
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-900 text-lg">Kualitas Terjamin</h3>
+                <p class="text-gray-600 text-sm">Hanya menggunakan bahan alami dan standar produksi yang ketat.</p>
+            </div>
+            </div>
+            <div class="flex items-center gap-4 bg-emerald-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow cursor-default">
+            <div class="flex-shrink-0 bg-emerald-400 text-white rounded-full p-3">
+                <!-- Icon Health -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h1m8 0h1m-5 8v-6a3 3 0 0 1 6 0v6m-7 2h8" />
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-900 text-lg">Sehat dan Bergizi</h3>
+                <p class="text-gray-600 text-sm">Nutrisi lengkap untuk mendukung kesehatan dan aktivitas kucing.</p>
+            </div>
+            </div>
+            <div class="flex items-center gap-4 bg-emerald-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow cursor-default">
+            <div class="flex-shrink-0 bg-emerald-400 text-white rounded-full p-3">
+                <!-- Icon Community -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 0 0-3-3h-2" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 20h5v-2a3 3 0 0 0-3-3H7" />
+                <circle cx="9" cy="7" r="4" />
+                <circle cx="17" cy="7" r="4" />
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-900 text-lg">Komunitas Pecinta Kucing</h3>
+                <p class="text-gray-600 text-sm">Kami bukan cuma jualan, tapi juga tempat berkumpulnya pecinta kucing.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Section Promo -->
+    <section id="promo" class="py-20 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center border-b-4 border-emerald-400 inline-block pb-2">
+        Promo Spesial
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <!-- Promo 1 -->
+        <div class="bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-3 text-emerald-600">Diskon 20% untuk Pembelian Pertama</h3>
+            <p class="text-gray-700 mb-4">Nikmati potongan harga spesial untuk pelanggan baru yang bergabung dengan kami.</p>
+            <a href="#" class="text-sm font-semibold text-emerald-500 hover:text-emerald-700">Cek Detail &rarr;</a>
+        </div>
+        <!-- Promo 2 -->
+        <div class="bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-3 text-emerald-600">Gratis Ongkir untuk Pembelian Rp100.000+</h3>
+            <p class="text-gray-700 mb-4">Belanja makanan kucing favoritmu tanpa khawatir biaya pengiriman.</p>
+            <a href="#" class="text-sm font-semibold text-emerald-500 hover:text-emerald-700">Lihat Syarat & Ketentuan &rarr;</a>
+        </div>
+        <!-- Promo 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+            <h3 class="text-xl font-semibold mb-3 text-emerald-600">Bonus Snack Setiap Pembelian Paket</h3>
+            <p class="text-gray-700 mb-4">Dapatkan snack sehat eksklusif untuk si meong setiap kali beli paket produk tertentu.</p>
+            <a href="#" class="text-sm font-semibold text-emerald-500 hover:text-emerald-700">Cek Paket Promo &rarr;</a>
+        </div>
+        </div>
+        <div class="mt-8 mb-6 flex">
+        <a href="#" 
+            class="group relative rounded-md bg-gradient-to-r from-emerald-400 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:from-emerald-500 hover:to-teal-500 hover:shadow-xl hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500">
+            <span class="relative z-10">Lihat Semua Promo</span>
+            <div class="absolute inset-0 rounded-md bg-gradient-to-r from-emerald-600 to-teal-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+        </a>
+        </div>
+    </div>
+    </section>
+
+    <section id="kontak" class="bg-white-50 py-8 px-6">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center border-b-4 border-emerald-400 inline-block pb-2 mb-6">
+            Hubungi Kami
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-1 items-center">
+        <!-- Info Kontak -->
+        <div class="space-y-6 text-gray-700 text-base leading-relaxed">
+            <p>Ada yang ingin ditanyakan? Kirim pesan atau hubungi kami langsung melalui kontak berikut:</p>
+            <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v7m0 0H8m4 0h4" />
+            </svg>
+            <span>Jl. Kucing Sehat No. 12, Jakarta</span>
+            </div>
+            <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h1m8 0h1m-5 8v-6a3 3 0 0 1 6 0v6m-7 2h8" />
+            </svg>
+            <a href="tel:+628123456789" class="hover:text-emerald-600 transition-colors">+62 812-3456-789</a>
+            </div>
+            <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v7m0 0H8m4 0h4" />
+            </svg>
+            <a href="mailto:info@ciobites.com" class="hover:text-emerald-600 transition-colors">info@ciobites.com</a>
+            </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <form action="#" method="POST" class="p-4 rounded max-w-md w-full mt-6">
+        <label for="nama" class="block text-gray-700 mb-1 font-medium">Nama</label>
+        <input type="text" id="nama" name="nama" required placeholder="Nama" 
+                class="w-full mb-4 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-transparent" />
+        
+        <label for="email" class="block text-gray-700 mb-1 font-medium">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Email" 
+                class="w-full mb-4 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-transparent" />
+        
+        <label for="pesan" class="block text-gray-700 mb-1 font-medium">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4" required placeholder="Pesan" 
+                    class="w-full mb-6 px-3 py-2 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-transparent"></textarea>
+        
+        <button type="submit" class="w-full bg-emerald-400 hover:bg-emerald-500 text-white font-semibold py-3 rounded transition-colors">
+            Kirim Pesan
+        </button>
+        </form>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-100 text-emerald-800 py-8 mt-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0 text-sm font-medium">
+        <p>© 2025 CioBites. All rights reserved.</p>
+        </div>
+        <div class="flex gap-6 text-sm font-semibold">
+        <a href="mailto:info@ciobites.com" class="hover:underline">info@ciobites.com</a>
+        <a href="tel:+628123456789" class="hover:underline">+62 812-3456-789</a>
+        <a href="#" class="hover:underline">Facebook</a>
+        <a href="#" class="hover:underline">Instagram</a>
+        </div>
+    </div>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
